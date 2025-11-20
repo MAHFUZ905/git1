@@ -32,10 +32,10 @@ public class EmployeeManager {
                           new FileInputStream("employees.txt")));
                 String line = r.readLine();
                 System.out.println(line);
-                String employees[] = line.split(",");
+                String employees[] = line.split(",");~
                 Random rand = new Random();
-                int idx = rand.nextInt(employees.length);
-                System.out.println(employees[idx]);
+                int randomIndex = rand.nextInt(employees.length);
+                System.out.println(employees[randomIndex]);
             } catch (Exception employees) {
             }
             System.out.println("Data Loaded.");
